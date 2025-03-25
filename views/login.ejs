@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("includes/head") %>
+<body2>  
+  <div6>
+  <ul>
+  <li><a href="./login">تسجيل دخول</a> </li>
+  <li><a href="./">انشاء حساب</a> </li>
+  </ul>
+  </div6>
+        <br>        
+<h1 style="text-align: center;"> اهلا بك من جديد برجاء تسجيل  دخولك</h1><br><br>
+<div4>
+        <form action="/login" method="post" style="display:flex;justify-content:center">
+      <fieldset>
+        <legend style="text-align:center;background-color:blue;">استمارة تسجيل الدخول</legend><br>
+        <ul>
+          <li><label for="national_id"><small>الرقم القومي </small></label><br>
+            <input type="number" id="national_id" name="national_id" autocomplete="off" style="margin-left:5px;"><br>
+          </li>
+          <li><label for="password"><small> كلمة المرور</small></label><br>
+            <input type="password" id="password" name="password" autocomplete="off" style="margin-left:5px;"><br><br>
+          </li>
+           <li><button style="color: red;margin-left: 50px;"> ادخل</button>
+           </li>
+        </ul>  
+          <% errors.forEach(error=>{ %>
+            <p style="color: red;text-align: end;"><%=error%></p>
+            <% }) %>
+       </fieldset>
+      </form>
+</div4>        
+</body2>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("includes/head") %>
+  <%- include("includes/header")%>
+        <br>
+<body2>        
+<h1 style="text-align: center;">قسم الشكاوي</h1><br>
+<div4>        
+        <form action="/create-post" method="post">
+      <fieldset>
+        <legend style="text-align:center;display:flex;justify-content: center;background-color: red;width: 130px;margin-left:160px;">طلب شكوي</legend><br>
+        <ul>
+        <li>  
+            <label for="title" style="margin-left: 10px;display: flex;justify-content: flex-end;"><small>عنوان الشكوي</small></label> 
+            <input type="text" id="title" name="title" autocomplete="off" style="display: flex;justify-content: flex-start;width: 250px;margin-left: 160px;">
+        </li>
+        <li>
+            <label for="body" style="margin-left:10px;display: flex;justify-content: flex-end;"><small>محتوي الشكوي</small></label>
+            <textarea name="body" id="body" style="margin-left:10px;width:400px;display: flex;justify-content: flex-end;"></textarea>
+        </li>
+        </ul>    
+          <button style="color: red;display: flex;margin-left:150px ;">تسجيل الشكوي</button> 
+          <% errors.forEach(error=>{ %>
+            <p style="color: red;text-align: end;"><%=error%></p>
+            <% }) %>
+       </fieldset>
+      </form>
+</div4>  
+</body2>
+</html>

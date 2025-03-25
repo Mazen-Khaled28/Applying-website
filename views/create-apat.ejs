@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("includes/head") %>
+  <%- include("includes/header")%>
+        <br>
+<body2>
+<h1 style="text-align: center;">قسم التقديم علي الاسكان</h1><br>
+<div4 style="display: flex;justify-content: center;">        
+        <form action="/create-apat" method="post">
+      <fieldset>
+        <legend style="text-align:center;justify-content: center;background-color: green;">طلب تقديم علي الاسكان</legend><br>
+        <ul>
+            <li>
+            <label for="apatname"><small>اسم المتقدم</small></label><br>
+            <input type="text" id="apatname" name="apatname" autocomplete="off">
+            </li>
+            
+            <li>
+            <label for="apataddr"><small>عنوان المتقدم</small></label><br>
+            <input type="text" id="apataddr" name="apataddr" autocomplete="off">
+            </li>
+            
+            <li>
+            <label for="apatsale"><small>مفردات الراتب للمتقدم</small></label><br>
+            <input type="number" id="apatsale" name="apatsale" autocomplete="off">
+            </li>
+            
+            <li>    
+            <label for="apatcomp"><small>اسم المشروع</small></label><br>
+            <input type="text" id="apatcomp" name="apatcomp" autocomplete="off">
+            </li>
+            
+        </ul>    
+          <button style="color: red;margin-left:80px;">تسجيل الطلب</button> 
+          <% errors.forEach(error=>{ %>
+            <p style="color: red;text-align: end;"><%=error%></p>
+            <% }) %>
+       </fieldset>
+      </form>
+</div4>  
+</body2>
+</html>

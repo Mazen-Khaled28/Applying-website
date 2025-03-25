@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("includes/head") %>
+<%- include("includes/header") %>
+<body2>
+<%if(showp.length>0){ %>
+    <h3 style="text-align: center;">يوجد لديك <%= showp.length %> شكاوي</h3>
+    <br>
+    <ul>
+        <% showp.forEach(showww => {%>
+         <li style="border:solid;width:700px;margin-left:600px;background-color: red;">
+          <h2 style="margin-left:480px;"> : عنوان الشكوي</h2>
+         <h2><%=showww.title%></h2>
+          <h4 style="margin-left: 420px;"><%=new Date(showww.createdDate).getDate()%>/<%= new Date(showww.createdDate).getMonth()+1%>/<%= new Date(showww.createdDate).getFullYear()%> : تاريخ الشكوي</h4><br> 
+          <h4 style="margin-left:520px;"> : محتوي الشكوي</h4>
+          <%= showww.body%>
+         </li>
+         <br>
+          <%}) %>
+</ul>
+<%}  else{%>
+<h3 style="text-align: center;">لا يوجد لديك شكاوي سابقة</h3>
+ <%  }%>
+<%if(showsh.length>0){ %>
+    <h3 style="text-align: center;"> يوجد لديك <%= showsh.length %> تقديمات مدارس</h3>
+    <br>
+    <ul>
+        <% showsh.forEach(showwsh => {%>
+         <li style="border:solid;width:700px; background-color: yellow;margin-left: 600px;">
+            <p style="margin-left:525px;"><%=showwsh.studentname%> : اسم الطالب</p>
+            <p style="margin-left: 410px;"><%=showwsh.studentnation%> : الرقم القومي الطالب</p> 
+            <p style="margin-left:430px;"><%= showwsh.schoolname%> : اسم المدرسة المتقدم اليها</p>
+         </li>
+         <br>
+          <%}) %>
+</ul>
+<%}  else{%>
+<h3 style="text-align: center;">لا يوجد لديك تقديمات للمدارس سابقة</h3><br>
+ <%  }%> 
+ <%if(showa.length>0){ %>
+    <h3 style="text-align: center;">يوجد لديك <%= showa.length %> تقديمات للسكن</h3>
+    <br>
+    <ul>
+        <% showa.forEach(showwa => {%>
+         <li style="border:solid;width:700px; background-color: Green;margin-left: 600px;">
+          <p style="margin-left:510px;"><%=showwa.apatname%> : اسم المتقدم</p>
+          <p style="margin-left: 550px;"> : محل سكن المتقدم</p> 
+          <%=showwa.apataddr%>
+          <p style="margin-left:490px;"><%= showwa.apatsale%> : مفردات مرتب المتقدم</p>
+          <p style="margin-left:445px;"><%= showwa.apatcomp%> : اسم المشروع المتقدم اليه</p>
+         </li>
+         <br>
+          <%}) %>
+</ul>
+<%}  else{%>
+<h3 style="text-align: center;">لا يوجد لديك تقديمات للسكن سابقة</h3><br>
+ <%  }%> 
+</body2>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("includes/head") %>
+<%- include("includes/header")%>
+<br>
+<h1 style="text-align: center;">Welcome to my posts</h1><br>
+<main>
+<div style="background-color:aqua;color: white;">    
+<h1>Title: <%=post.title%></h1>
+posted by <%=post.username%> on <%=new Date(post.createdDate).getDate()%>/<%= new Date(post.createdDate).getMonth()+1%>/<%= new Date(post.createdDate).getFullYear()%>
+<br><h4>Content:<br><%= post.body %></h4>    
+</div> 
+</main>
+<!-- Footer -->
+<%- include("includes/footer") %>   
+</html>

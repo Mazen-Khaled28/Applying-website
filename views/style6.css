@@ -1,0 +1,71 @@
+.carousel-inner{
+display: flex;
+width:50px;    
+height: 30px;
+justify-content: center;
+}
+.carousel-inner img{
+width: 10px;
+height: 30px;
+justify-content: center;    
+}
+.carousel-inner h5{
+    display: flex;
+ justify-content: center;   
+}
+.carousel-inner p{
+    display: flex;
+    justify-content: center;
+}
+.btn-primary{
+    display: flex;
+    justify-content: center;
+    margin-left: 810px;
+}
+.card-group{
+    width:800px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;
+}
+.card-group .card img{
+ width: 200px;
+ display: flex;
+ justify-content: center;
+ margin-left: 30px;
+ border-radius: 90px;
+ margin-top: 20px;      
+}
+.card-group h5{
+ text-align: center;   
+}
+.card-group p{
+    text-align: center;
+}
+.card-group button{
+    margin-left: 60px;
+}
+.col-md-8{
+    margin-top: 100px;
+}
+.crds{
+    display: flex;
+    justify-content: space-around;
+}
+.crds img{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 100px;
+    width: 90px;
+    border: solid;
+  border-radius: 50px;  
+}
+.crds h5{
+  text-align: center;  
+}
+.crds p{
+    text-align: center;
+}
+.crds button{
+    margin-left: 130px;
+}
