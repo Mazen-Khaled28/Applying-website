@@ -2,15 +2,14 @@
 <html lang="en">
 <%- include("includes/head") %>
 <%- include("includes/header")%>
-<br>
 <body2>
 <h1 style="text-align: center;">انشاء حساب جديد</h1>
 <br>
 <br>
 <div4>    
-    <form action="/register" method="post">
+    <form action="/register" method="post" style="display:flex;justify-content:center;width:250px;">
     <fieldset>
-      <legend style="text-align:center;background-color: red;margin-left: 10px;">استمارة انشاء الحساب</legend><br>
+      <legend style="text-align:center;background-color: red;">استمارة انشاء الحساب</legend><br>
       <ul>
         <li>
         <label for="username"><small>اسم المستخدم</small></label><br>
@@ -25,13 +24,15 @@
           <input type="number" id="mobilenumber" name="mobilenumber" autocomplete="off">
         </li>
         <li><label for="password"><small> كلمة المرور</small></label><br>
-          <input type="password" id="password" name="password" autocomplete="off"><br>
-        </li>        
+          <input type="password" id="password" name="password" autocomplete="off" style="margin-right:20px;"><br>
+        </li><br>        
+       <li> <button style="margin-left:70px;color:red;"> انشاء</button>
+       </li>
       </ul> 
-        <button style="margin-left:90px;color:red;"> انشاء</button> 
         <% errors.forEach(error=>{ %>
           <p style="color:red;"><%=error%></p>
-          <% }) %>  
+          <% }) %>
+          <br>  
      </fieldset>
     </form>
 </div4> 

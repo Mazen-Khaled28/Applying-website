@@ -7,21 +7,20 @@
   <li><a href="./login">تسجيل دخول</a> </li>
   <li><a href="./">انشاء حساب</a> </li>
   </ul>
-  </div6>
-        <br>        
+  </div6>        
 <h1 style="text-align: center;"> اهلا بك من جديد برجاء تسجيل  دخولك</h1><br><br>
 <div4>
-        <form action="/login" method="post" style="display:flex;justify-content:center">
+        <form action="/login" method="post" style="display:flex;justify-content:center;width:250px;">
       <fieldset>
         <legend style="text-align:center;background-color:blue;">استمارة تسجيل الدخول</legend><br>
         <ul>
           <li><label for="national_id"><small>الرقم القومي </small></label><br>
-            <input type="number" id="national_id" name="national_id" autocomplete="off" style="margin-left:5px;"><br>
+            <input type="number" id="national_id" name="national_id" autocomplete="off"><br>
           </li>
           <li><label for="password"><small> كلمة المرور</small></label><br>
-            <input type="password" id="password" name="password" autocomplete="off" style="margin-left:5px;"><br><br>
+            <input type="password" id="password" name="password" autocomplete="off" style="margin-right:25px;"><br><br>
           </li>
-           <li><button style="color: red;margin-left: 50px;"> ادخل</button>
+           <li><button style="color: red;margin-left: 70px;"> ادخل</button>
            </li>
         </ul>  
           <% errors.forEach(error=>{ %>

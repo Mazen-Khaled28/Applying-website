@@ -276,4 +276,6 @@ res.cookie("ourCook",tokn,{
 
 res.redirect("login")
 })
-app.listen(1500)
+app.listen(1500,()=>{
+ console.log(`http://localhost:1500`)   
+})
