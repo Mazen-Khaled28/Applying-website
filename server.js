@@ -1,4 +1,6 @@
 const express=require("express")
+const ngrok = require('ngrok');
+const PORT=1500;
 showsh=0
 showp=0
 showa=0
@@ -276,6 +278,7 @@ res.cookie("ourCook",tokn,{
 
 res.redirect("login")
 })
-app.listen(1500,()=>{
- console.log(`http://localhost:1500`)   
+app.listen(PORT,async()=>{
+const url = await ngrok.connect(PORT);
+console.log(`runs at ${url}`);
 })
