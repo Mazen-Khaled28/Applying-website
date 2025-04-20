@@ -1,28 +1,33 @@
 {
-  "name": "backend",
+  "name": "project",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "<h1> A\u0000p\u0000p\u0000l\u0000y\u0000i\u0000n\u0000g</h1> <p>open readme file for more details about installation</p> <hr>\u0000 <h2>Schools</h2> <li> student name</li> <li> student national id</li> <li>school name</li> <hr>\u0000 <h2>Complains</h2> <li>title</li> <li>content</li> <hr> <h2>Apatrments</h2> <li> proposed name</li> <li> proposed national id</li> <li>proposed salary</li> <li>name of the project required</li>",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mazen-Khaled28/Applying-website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mazen-Khaled28/Applying-website/issues"
+  },
+  "homepage": "https://github.com/Mazen-Khaled28/Applying-website#readme",
   "dependencies": {
-    "@ngrok/ngrok": "^1.4.1",
     "bcrypt": "^5.1.1",
-    "better-sqlite3": "^11.8.1",
-    "bootstrap": "^5.3.3",
+    "better-sqlite3": "^11.9.1",
     "cookie-parser": "^1.4.7",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
-    "express": "^4.21.2",
+    "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "ngrok": "^5.0.0-beta.2",
-    "nodemon": "^3.1.9",
-    "sanitize-html": "^2.14.0"
+    "sanitize-html": "^2.16.0"
   }
 }

@@ -1,6 +1,6 @@
 const express=require("express")
 const ngrok = require('ngrok');
-const PORT=1500;
+const PORT=3000;
 showsh=0
 showp=0
 showa=0
@@ -282,3 +282,7 @@ app.listen(PORT,async()=>{
 const url = await ngrok.connect(PORT);
 console.log(`runs at ${url}`);
 })
+app.listen(3000, '0.0.0.0', () => {
+    console.log('Server running on http://localhost:3000');
+  });
+  

@@ -6,8 +6,8 @@ body{
  background-position: center;
 }
 h1{
-color:white;
-background-color: black;    
+color:black;
+background-color: white;    
 }
 h3{
     color: black;
@@ -16,13 +16,13 @@ h3{
     background-color: white;
 }
 div6{
-    color: red;
+    color: black;
     display: flex;
     justify-content:space-around;
     box-shadow: 20px 20px 22px grey;
     align-items: center;
     flex-direction: row;
-    background-color: black;
+    background-color: white;
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -46,7 +46,7 @@ div6{
    div6 ul li a{
     list-style: none;
     text-decoration: none;
-    color:red;
+    color:black;
    }
    div6 ul li a:hover{
     transition: 0.5s;
